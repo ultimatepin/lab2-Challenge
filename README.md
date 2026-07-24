@@ -205,9 +205,9 @@ Modulo-17 conversion is divided into two stages: reduce each 8-bit chunk in para
 Let the two residues be $A$ and $B$. Bit 4 is calculated separately from bits 3 through 0:
 
 ```math
-\operatorname{OUT}(4)
+\mathrm{OUT}(4)
 =
-\bigl(A(4)\oplus B(4)\bigr)\cdot \operatorname{EQ1.Q}.
+\bigl(A(4)\oplus B(4)\bigr)\cdot \mathrm{EQ1.Q}
 ```
 
 The term $A(4)\oplus B(4)$ detects when exactly one input equals 16. If one operand is 16, then:
@@ -448,20 +448,16 @@ xy &= 34157, \\
 
 Adding 4080 repeatedly gives:
 
-```math
-\begin{array}{c|c}
-\text{Additions} & \text{Current sum} \\
-\hline
-1 & 0001\,0101\,1101\,1101 \\
-2 & 0010\,0101\,1100\,1101 \\
-3 & 0011\,0101\,1011\,1101 \\
-4 & 0100\,0101\,1010\,1101 \\
-5 & 0101\,0101\,1001\,1101 \\
-6 & 0110\,0101\,1000\,1101 \\
-7 & 0111\,0101\,0111\,1101 \\
-8 & 1000\,0101\,0110\,1101
-\end{array}
-```
+| Additions | Current sum |
+| ---: | :--- |
+| 1 | `0001 0101 1101 1101` |
+| 2 | `0010 0101 1100 1101` |
+| 3 | `0011 0101 1011 1101` |
+| 4 | `0100 0101 1010 1101` |
+| 5 | `0101 0101 1001 1101` |
+| 6 | `0110 0101 1000 1101` |
+| 7 | `0111 0101 0111 1101` |
+| 8 | `1000 0101 0110 1101` |
 
 When bits 7 through 4 match the independently calculated benchmark, the current sum is the final product.
 
