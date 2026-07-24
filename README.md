@@ -3,8 +3,6 @@
 **Created:** March 16, 2025  
 **Class:** Spring
 
-> All diagrams referenced by this README are stored in the `images/` directory. The original image filenames are preserved.
-
 ## Introduction
 
 The task is to design a 16×16 multiplier with the following constraint:
