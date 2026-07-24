@@ -1,7 +1,7 @@
 # Challenge: 16×16 Multiplier
 
 **Created:** March 16, 2025  
-**Class:** Spring
+**Class:** ELEC40003 Year 1 Spring DECA
 
 ## Introduction
 
